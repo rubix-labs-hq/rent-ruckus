@@ -1,0 +1,25 @@
+:root { --ink:#1c1220; --paper:#f3e2bc; --paper-2:#ffeec8; --red:#9f1d14; --red-hot:#e23d28; --gold:#ffb703; --muted:#46383a;
+  --display: Impact, Haettenschweiler, "Arial Narrow Bold", "Arial Black", sans-serif; --body: "Avenir Next", "Segoe UI", system-ui, sans-serif; color-scheme: light; }
+* { box-sizing: border-box; }
+html { background: var(--ink); }
+body { margin: 0; font: 18px/1.5 var(--body); color: var(--ink); background: var(--paper);
+  background-image: radial-gradient(circle, rgba(28,18,32,.07) .9px, transparent 1.35px); background-size: 6px 6px; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header.top { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+header.top img { width: 44px; height: 44px; }
+header.top a { font: 400 26px/1 var(--display); color: var(--ink); text-decoration: none; letter-spacing: .02em; }
+h1 { font: 400 clamp(64px, 16vw, 120px)/.9 var(--display); color: var(--red-hot); text-shadow: 5px 5px 0 var(--ink); margin: 0 0 16px; }
+h2 { font: 400 36px/1 var(--display); margin: 36px 0 10px; }
+h3 { margin: 24px 0 6px; font-size: 19px; }
+p, li { text-wrap: pretty; }
+a { color: var(--red); font-weight: 700; }
+.kicker { display: inline-block; background: var(--ink); color: var(--paper); border-radius: 99px; padding: 4px 14px;
+  font: 800 12px/1.6 var(--body); letter-spacing: .14em; text-transform: uppercase; }
+.lede { font-size: 21px; max-width: 34em; }
+.shots { display: grid; gap: 14px; margin: 28px 0; }
+.shots img { width: 100%; height: auto; border: 3px solid var(--ink); border-radius: 18px; box-shadow: 5px 5px 0 var(--ink); display: block; }
+.button { display: inline-block; background: var(--red); color: #fff; text-decoration: none; border: 3px solid var(--ink); border-radius: 14px;
+  padding: 6px 18px 9px; font: 400 26px/1.2 var(--display); box-shadow: 4px 4px 0 var(--ink); }
+.card { background: var(--paper-2); border: 3px solid var(--ink); border-radius: 20px; padding: 6px 20px 14px; box-shadow: 4px 4px 0 var(--ink); margin: 20px 0; }
+footer { margin-top: 48px; font-size: 14px; color: var(--muted); }
+footer a { color: var(--muted); margin-right: 14px; }
